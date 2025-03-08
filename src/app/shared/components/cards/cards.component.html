@@ -1,0 +1,52 @@
+<div
+  class="bg-white w-[250px] h-[390px] mx-auto rounded-md shadow-md justify-center"
+>
+  <img
+    [src]="img"
+    class="h-[200px] w-full object-fill rounded-t-lg"
+    alt="Imagem do repositório"
+  />
+  <div class="p-5">
+    <div class="flex justify-between">
+      <p
+        class="text-gray-600 text-lg font-bold cursor-pointer"
+        (click)="openRepoUrl()"
+      >
+        {{ title }}
+      </p>
+      @if(private === false){
+      <i class="bi bi-people-fill text-gray-600"></i>
+      } @else{
+      <i class="bi bi-lock text-gray-600"></i>
+      }
+    </div>
+    <p class="text-gray-500 text-sm pb-6 line-clamp-1">{{ description }}</p>
+    <p>
+      <strong>
+        <ng-container *ngFor="let star of starsArray; let i = index">
+          <i
+            class="bi bi-star-fill"
+            *ngIf="i < (stars || 0); else emptyStar"
+            style="color: gold"
+          ></i>
+          <ng-template #emptyStar>
+            <i class="bi bi-star" style="color: gold"></i>
+          </ng-template>
+        </ng-container>
+      </strong>
+    </p>
+    <div class="flex items-center gap-2">
+      <img
+        [src]="avatar_url"
+        class="h-10 w-10 rounded-full"
+        alt="Avatar do dono"
+      />
+      <div class="text-gray-600">
+        <p class="font-bold cursor-point" (click)="openUserModal()">
+          {{ name }}
+        </p>
+        <p class="text-sm">em {{ date | date : "dd/MM/yyyy" }}</p>
+      </div>
+    </div>
+  </div>
+</div>
