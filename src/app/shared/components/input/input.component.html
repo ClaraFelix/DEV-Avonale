@@ -6,7 +6,7 @@
     class="w-full bg-white shadow text-gray-600 px-3 pl-14 py-3 font-mono border rounded-b-lg outline-none focus:shadow-md disabled:border-neutral disabled:bg-neutral transition-all duration-150 ease-in-out"
     [type]="type"
     [placeholder]="placeholder"
-    [value]="value"
+    [(ngModel)]="value"
     (input)="onInputChange($event)"
   />
 </div>
