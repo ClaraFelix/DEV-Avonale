@@ -10,11 +10,11 @@ O projeto utiliza boas práticas de desenvolvimento frontend, incluindo componen
 
 Principais funcionalidades:
 
-✅ Listagem de repositórios do GitHub
-✅ Busca e filtragem de repositórios em tempo real
-✅ Exibição de detalhes do repositório e do proprietário
-✅ Modal para visualizar informações do dono do repositório
-✅ Interface responsiva e amigável
+- ✅ Listagem de repositórios do GitHub  
+- ✅ Busca e filtragem de repositórios em tempo real  
+- ✅ Exibição de detalhes do repositório e do proprietário  
+- ✅ Modal para visualizar informações do dono do repositório  
+- ✅ Interface responsiva e amigável  
 
 Este projeto é ideal para quem deseja explorar o uso do Angular em aplicações reais, integrando APIs externas e aplicando conceitos modernos de desenvolvimento frontend.
 
