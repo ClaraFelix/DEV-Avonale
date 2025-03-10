@@ -1,27 +1,24 @@
 # DevAvonale
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) versão 17.3.6.
 
-## Development server
+## Descrição
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O DevAvonale é uma aplicação desenvolvida com Angular para exibir repositórios do GitHub de forma dinâmica e interativa. A aplicação consome a API do GitHub para listar repositórios, permitindo a busca e filtragem de resultados. Além disso, oferece informações detalhadas sobre cada repositório.
 
-## Code scaffolding
+O projeto utiliza boas práticas de desenvolvimento frontend, incluindo componentes reutilizáveis, injeção de dependências e uma interface responsiva.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Principais funcionalidades:
 
-## Build
+✅ Listagem de repositórios do GitHub
+✅ Busca e filtragem de repositórios em tempo real
+✅ Exibição de detalhes do repositório e do proprietário
+✅ Modal para visualizar informações do dono do repositório
+✅ Interface responsiva e amigável
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Este projeto é ideal para quem deseja explorar o uso do Angular em aplicações reais, integrando APIs externas e aplicando conceitos modernos de desenvolvimento frontend.
 
-## Running unit tests
+## Servidor de desenvolvimento
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Execute `ng serve` para iniciar um servidor de desenvolvimento. Acesse `http://localhost:4200/`.
+A aplicação será recarregada automaticamente se você modificar qualquer um dos arquivos-fonte.
