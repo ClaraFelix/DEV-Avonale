@@ -49,6 +49,7 @@ export class RepositoriesComponent implements OnInit {
   searchTerm: string = '';
   selectedUser: any = null;
   searchSubject = new Subject<string>();
+  isLoading = false;
 
   constructor(private repositoryService: RepositoryService) {}
 

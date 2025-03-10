@@ -10,6 +10,11 @@
     </dev-avonale-input>
   </div>
   <!-- Card -->
+  @if (isLoading) {
+  <div class="flex justify-center pt-8">
+    <span class="loading loading-circle text-gray-600"></span>
+  </div>
+  } @else {
   <div
     class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6"
   >
@@ -29,6 +34,7 @@
     ></dev-avonale-cards>
     }
   </div>
+  }
 </div>
 <div
   class="text-center mt-6 font-mono text-grey-01 font-semibold text-sm"
